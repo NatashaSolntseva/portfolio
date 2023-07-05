@@ -1,0 +1,7 @@
+@import "../../styles/variable.css";
+
+.information {
+  background-color: var(--color-white);
+  width: 305px;
+  min-height: 300px;
+}
