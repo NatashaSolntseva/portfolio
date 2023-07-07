@@ -1,7 +1,8 @@
 import React from "react";
+import { Element } from "react-scroll";
 
 import "./information.css";
 
 export const Information = () => {
-  return <div className="information">Information</div>;
+  return <Element className="information">Information</Element>;
 };

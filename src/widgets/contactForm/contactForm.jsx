@@ -1,7 +1,12 @@
 import React from "react";
+import { Element } from "react-scroll";
 
 import "./contactForm.css";
 
 export const ContactForm = () => {
-  return <div className="contactForm">ContactForm</div>;
+  return (
+    <Element name="contacts" className="contactForm">
+      ContactForm
+    </Element>
+  );
 };
