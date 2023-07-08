@@ -2,8 +2,10 @@ import React from "react";
 import { Element } from "react-scroll";
 
 import "./information.css";
-import ProfilePhoto from "./image/profilePhoto.jpg";
+import ProfilePhoto from "./images/profilePhoto.png";
 import { SkillsContainer } from "../../shared/skills-container/skillsContainer";
+
+import FacebookIcon from "./icons/facebook.svg";
 
 export const Information = () => {
   return (
@@ -16,8 +18,27 @@ export const Information = () => {
         ></img>
         <h4 className="page__text">Natasha Solntseva</h4>
         <p className="page__text ">Font-end Developer</p>
-        <div className="information__social"></div>
-        <div>
+        <div className="information__social">
+          <div className="information__social-icon">
+            <img src={FacebookIcon} alt="Facebook"></img>
+          </div>
+          <div className="information__social-icon">
+            <img src={FacebookIcon} alt="Instagram"></img>
+          </div>
+          <div className="information__social-icon">
+            <img src={FacebookIcon} alt="Instagram"></img>
+          </div>
+          <div className="information__social-icon">
+            <img src={FacebookIcon} alt="Instagram"></img>
+          </div>
+          <div className="information__social-icon">
+            <img src={FacebookIcon} alt="Instagram"></img>
+          </div>
+          <div className="information__social-icon">
+            <img src={FacebookIcon} alt="Instagram"></img>
+          </div>
+        </div>
+        <div className="information_main-info">
           <ul>
             <li>Age:</li>
             <li>Residence:</li>
