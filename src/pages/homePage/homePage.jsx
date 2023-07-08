@@ -6,6 +6,7 @@ import { Information } from "../../widgets/information/information";
 import { RightPanel } from "../../widgets/rightPanel/rightPanel";
 import { Portfolio } from "../../widgets/portfolio/portfolio";
 import { History } from "../../widgets/history/history";
+import { WORK, EDUCATION, PORTFOLIO } from "../../constants/history.js";
 
 import "./homePage.css";
 
@@ -15,9 +16,9 @@ export const HomePage = () => {
       <Information />
       <div className="inner">
         <Header />
-        <History name="education" />
-        <History name="work" />
-        <Portfolio />
+        <History name="work" data={WORK} />
+        <History name="education" data={EDUCATION} />
+        <Portfolio data={PORTFOLIO} />
         <ContactForm />
         <Footer />
       </div>

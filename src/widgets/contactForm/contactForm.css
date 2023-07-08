@@ -1,7 +1,11 @@
 @import "../../styles/variable.css";
 
 .contactForm {
-  background-color: var(--color-white);
+  background-color: var(--color-light-gray);
   width: 100%;
   min-height: 600px;
+  padding-bottom: 146px;
+  display: grid;
+  grid-template-columns: 570px 370px;
+  column-gap: 30px;
 }

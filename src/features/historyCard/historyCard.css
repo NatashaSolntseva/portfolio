@@ -1,0 +1,28 @@
+@import "../../styles/variable.css";
+
+.card {
+  display: grid;
+  grid-template-columns: 189px auto;
+  gap: 180px;
+  border-bottom: 1.5px solid var(--color-light-gray);
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: var(--color-black);
+  padding-bottom: 28px;
+}
+
+.card__grade-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 21px;
+}
+.card__date {
+  display: inline-block;
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+}

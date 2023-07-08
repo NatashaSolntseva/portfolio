@@ -1,0 +1,10 @@
+@import "../../styles/variable.css";
+
+.headerSecondary {
+  color: var(--color-black);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  padding-bottom: 25px;
+}

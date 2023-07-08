@@ -1,0 +1,34 @@
+@import "../../styles/variable.css";
+
+.skills {
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.skills:not(:last-of-type) {
+  border-bottom: 1.5px solid var(--color-light-gray);
+}
+
+.skills__caption {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.skills__bar {
+  width: 220px;
+  height: 4px;
+  border: 0.5px solid var(--color-yellow);
+  border-radius: 4px;
+  padding: 1px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills__bar-inside {
+  width: 198px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--color-yellow);
+}
