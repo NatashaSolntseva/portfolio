@@ -40,7 +40,10 @@ export const Information = () => {
         </div>
         <div className="information_main-info">
           <ul>
-            <li>Age:</li>
+            <li>
+              <p>Age:</p>
+              <p>24</p>
+            </li>
             <li>Residence:</li>
             <li>Freelance:</li>
             <li>Address:</li>
