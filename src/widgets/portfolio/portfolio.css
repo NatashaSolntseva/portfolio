@@ -5,4 +5,27 @@
   width: 100%;
   min-height: 600px;
   padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio__nav {
+  list-style-type: none;
+  display: flex;
+  gap: 38px;
+}
+
+.portfolio__nav-item {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: var(--color-black);
+  transition: 0.5s;
+}
+
+.portfolio__nav-item:hover {
+  color: var(--color-yellow);
 }

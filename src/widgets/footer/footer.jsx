@@ -4,6 +4,10 @@ import "./footer.css";
 
 export const Footer = () => {
   return (
-    <div className="footer">2023 All Rights Reserved.Natasha Solntseva</div>
+    <footer className="footer">
+      <p className="page__text footer__text">
+        2023 all rights reserved.Natasha Solntseva
+      </p>
+    </footer>
   );
 };

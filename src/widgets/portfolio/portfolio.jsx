@@ -12,12 +12,12 @@ export const Portfolio = ({ data }) => {
       <Header header={data.header} />
       <Paragraph aling="center" text={data.title} />
       <nav>
-        <ul>
-          <li>All categories</li>
-          <li>UI Design</li>
-          <li>Web Templates</li>
-          <li>Logo</li>
-          <li>Branding</li>
+        <ul className="portfolio__nav">
+          <li className="portfolio__nav-item">All categories</li>
+          <li className="portfolio__nav-item">UI Design</li>
+          <li className="portfolio__nav-item">Web Templates</li>
+          <li className="portfolio__nav-item">Logo</li>
+          <li className="portfolio__nav-item">Branding</li>
         </ul>
       </nav>
     </Element>

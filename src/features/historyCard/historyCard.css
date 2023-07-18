@@ -1,10 +1,14 @@
 @import "../../styles/variable.css";
 
 .card {
-  display: grid;
-  grid-template-columns: 189px auto;
-  gap: 180px;
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1.5px solid var(--color-light-gray);
+  padding-bottom: 38px;
+}
+
+.card__info {
+  max-width: 250px;
 }
 
 .card__title {
@@ -14,15 +18,30 @@
   text-transform: capitalize;
   color: var(--color-black);
   padding-bottom: 28px;
+  padding-top: 32px;
 }
 
-.card__grade-container {
+.card__position-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   gap: 21px;
 }
+
+.card__position {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-transform: capitalize;
+}
 .card__date {
-  display: inline-block;
+  padding: 4px 7px;
   background-color: var(--color-yellow);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.1;
   color: var(--color-white);
+}
+
+.card__description {
+  width: 536px;
 }

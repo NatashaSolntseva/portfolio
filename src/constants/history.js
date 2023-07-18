@@ -4,28 +4,26 @@ export const EDUCATION = {
     "I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.",
   history: [
     {
-      siteName: "University of Maiamy",
+      siteName: "Yandex Practicum",
       grade: "Student",
-      date: "Jan 1016 - Dec 2021",
-      work: "Certificate of web training",
+      date: "May 2021 - May 2023",
+      work: "Certificate of completion of the Web-developer professional training course",
       workHistory:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
+        "I have written several projects in JavaScript and React.JS, created layouts using HTML5 and CSS3 (Flexbox, Grid Layout), and utilized Figma for design mockups. Additionally, I implemented front-end validation, built projects with Webpack, and utilized Git in both team and personal projects. All of my project work has undergone code reviews.",
     },
     {
-      siteName: "University of Toronto",
+      siteName: "Peter the Great St.Petersburg Polytechnic University",
       grade: "Student",
-      date: "Jan 1016 - Dec 2021",
-      work: "Certificate of web training",
-      workHistory:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
+      date: "Sept 2003 - Jun 2008",
+      work: "Diploma",
+      workHistory: "Diploma in Master of Management.",
     },
     {
-      siteName: "University of Toronto",
+      siteName: "Peter the Great St.Petersburg Polytechnic University",
       grade: "Student",
-      date: "Jan 1016 - Dec 2021",
-      work: "Certificate of web training",
-      workHistory:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
+      date: "Sept 2001 - Jun 2007",
+      work: "Diploma",
+      workHistory: "Diploma in Mathematics, Systems Programmer.",
     },
   ],
 };
@@ -43,12 +41,12 @@ export const WORK = {
       workHistory: "Something",
     },
     {
-      siteName: "Yandex.Practicum",
+      siteName: "Yandex Practicum",
       grade: "Student",
-      date: "May 2021 - April 2023",
-      work: "Certificate of web training",
+      date: "May 2021 - May 2023",
+      work: "Certificate of completion of the Web-developer professional training course",
       workHistory:
-        "Написала несколько проектов на JavaScript, React.JS, верстка на HTML5, CSS3 (Flexbox, Grid Layout), использовала макеты в Figma. Также делала валидацию на стороне front-end, собирала проекты с Webpack. В командных и личных проектах использовала Git. Все проектные работы прошли код-ревью.",
+        "I have written several projects in JavaScript and React.JS, created layouts using HTML5 and CSS3 (Flexbox, Grid Layout), and utilized Figma for design mockups. Additionally, I implemented front-end validation, built projects with Webpack, and utilized Git in both team and personal projects. All of my project work has undergone code reviews.",
     },
     {
       siteName: "SBER",
