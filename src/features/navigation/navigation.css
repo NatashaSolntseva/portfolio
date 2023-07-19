@@ -33,4 +33,14 @@
   color: var(--color-white);
   background-color: var(--color-black);
   padding: 6px 15px 3px 15px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.nav__item .tooltip .example-arrow {
+  width: 10px;
+  height: 10px;
+  transform: rotate(60deg) skewX(30deg);
+  z-index: -1;
 }

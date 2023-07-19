@@ -20,55 +20,81 @@ export const Navigation = () => {
         to="home"
         smooth={true}
         duration={500}
+        spy={true}
         data-tooltip-id="tooltip-home"
         data-tooltip-content="Home"
       >
         <HomeIcon className="nav__icon" />
-        <Tooltip className="tooltip" id="tooltip-home" />
+        <Tooltip
+          className="tooltip"
+          classNameArrow="example-arrow"
+          id="tooltip-home"
+        />
       </Link>
       <Link
         className="nav__item"
         to="work"
         smooth={true}
         duration={500}
+        activeClass="active"
+        spy={true}
         data-tooltip-id="tooltip-work"
         data-tooltip-content="Work"
       >
         <WorkIcon className="nav__icon" />
-        <Tooltip className="tooltip" id="tooltip-work" />
+        <Tooltip
+          className="tooltip"
+          classNameArrow="example-arrow"
+          id="tooltip-work"
+        />
       </Link>
       <Link
         className="nav__item"
         to="education"
         smooth={true}
         duration={500}
+        spy={true}
         data-tooltip-id="tooltip-education"
         data-tooltip-content="Education"
       >
         <EducationIcon className="nav__icon" />
-        <Tooltip className="tooltip" id="tooltip-education" />
+        <Tooltip
+          className="tooltip"
+          classNameArrow="example-arrow"
+          id="tooltip-education"
+        />
       </Link>
       <Link
         className="nav__item"
         to="portfolio"
         smooth={true}
         duration={500}
+        spy={true}
         data-tooltip-id="tooltip-portfolio"
         data-tooltip-content="Portfolio"
       >
         <PortfolioIcon className="nav__icon" />
-        <Tooltip className="tooltip" id="tooltip-portfolio" />
+        <Tooltip
+          className="tooltip"
+          classNameArrow="example-arrow"
+          id="tooltip-portfolio"
+        />
       </Link>
       <Link
         className="nav__item"
         to="contacts"
         smooth={true}
         duration={500}
+        spy={true}
         data-tooltip-id="tooltip-contacts"
         data-tooltip-content="Contacts"
       >
         <ContactIcon className="nav__icon" />
-        <Tooltip className="tooltip" id="tooltip-contacts" />
+        <Tooltip
+          className="tooltip"
+          classNameArrow="example-arrow"
+          id="tooltip-contacts"
+        />
       </Link>
     </nav>
   );

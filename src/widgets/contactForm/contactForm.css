@@ -3,6 +3,7 @@
 .contactForm {
   background-color: var(--color-light-gray);
   width: 100%;
+  padding-top: 72px;
   padding-bottom: 146px;
   display: grid;
   grid-template-columns: 570px 370px;
