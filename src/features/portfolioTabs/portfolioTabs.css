@@ -1,0 +1,21 @@
+.portfolioTabs {
+  display: flex;
+  gap: 37px;
+}
+
+.portfolioTabs__tab {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-black);
+  text-transform: capitalize;
+  transition: all 0.8s ease;
+}
+
+.portfolioTabs__tab:hover {
+  color: var(--color-yellow);
+}

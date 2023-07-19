@@ -1,0 +1,27 @@
+.portfolioCard {
+  width: 310px;
+  height: 300px;
+  position: relative;
+}
+
+.portfolioCard__img {
+  width: 100%;
+}
+
+.portfolioCard__overlay {
+  background: rgba(255, 180, 0, 0.95);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.portfolioCard__overlay:hover {
+  opacity: 1;
+}
