@@ -16,11 +16,11 @@ export const Navigation = () => {
     <nav className="nav">
       <Link
         className="nav__item"
-        activeClass="active"
         to="home"
         smooth={true}
         duration={500}
         spy={true}
+        activeClass="active"
         data-tooltip-id="tooltip-home"
         data-tooltip-content="Home"
       >
@@ -36,8 +36,8 @@ export const Navigation = () => {
         to="work"
         smooth={true}
         duration={500}
-        activeClass="active"
         spy={true}
+        activeClass="active"
         data-tooltip-id="tooltip-work"
         data-tooltip-content="Work"
       >
@@ -54,6 +54,7 @@ export const Navigation = () => {
         smooth={true}
         duration={500}
         spy={true}
+        activeClass="active"
         data-tooltip-id="tooltip-education"
         data-tooltip-content="Education"
       >
@@ -70,6 +71,7 @@ export const Navigation = () => {
         smooth={true}
         duration={500}
         spy={true}
+        activeClass="active"
         data-tooltip-id="tooltip-portfolio"
         data-tooltip-content="Portfolio"
       >
@@ -82,6 +84,7 @@ export const Navigation = () => {
       </Link>
       <Link
         className="nav__item"
+        activeClass="active"
         to="contacts"
         smooth={true}
         duration={500}

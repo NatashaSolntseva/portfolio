@@ -44,3 +44,11 @@
   transform: rotate(60deg) skewX(30deg);
   z-index: -1;
 }
+
+.active {
+  background-color: var(--color-yellow);
+}
+
+.active .nav__icon {
+  fill: var(--color-black);
+}
