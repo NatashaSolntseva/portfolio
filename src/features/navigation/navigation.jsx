@@ -2,10 +2,10 @@ import React from "react";
 
 import { Link } from "react-scroll";
 
-import HomeIcon from "./images/home.svg";
-import ContactIcon from "./images/contact.svg";
-import CVIcon from "./images/cv.svg";
-import PortfolioIcon from "./images/portfolio.svg";
+import { ReactComponent as HomeIcon } from "./images/home.svg";
+import { ReactComponent as ContactIcon } from "./images/contact.svg";
+import { ReactComponent as CVIcon } from "./images/cv.svg";
+import { ReactComponent as PortfolioIcon } from "./images/portfolio.svg";
 
 import "./navigation.css";
 
@@ -19,16 +19,16 @@ export const Navigation = () => {
         smooth={true}
         duration={500}
       >
-        <img src={HomeIcon} alt="HomeIcon" />
+        <HomeIcon className="nav__icon" />
       </Link>
       <Link className="nav__item" to="work" smooth={true} duration={500}>
-        <img src={CVIcon} alt="CVIcon" />
+        <CVIcon className="nav__icon" />
       </Link>
       <Link className="nav__item" to="portfolio" smooth={true} duration={500}>
-        <img src={PortfolioIcon} alt="PortfolioIcon" />
+        <PortfolioIcon className="nav__icon" />
       </Link>
       <Link className="nav__item" to="contacts" smooth={true} duration={500}>
-        <img src={ContactIcon} alt="ContactIcon" />
+        <ContactIcon className="nav__icon" />
       </Link>
     </nav>
   );

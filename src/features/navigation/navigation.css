@@ -18,9 +18,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.7s;
+  transition: all 0.8s ease;
 }
 
 .nav__item:hover {
   background-color: var(--color-yellow);
+}
+
+.nav__item:hover .nav__icon {
+  fill: var(--color-black);
 }
