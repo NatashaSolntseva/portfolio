@@ -29,21 +29,29 @@ export const Header = () => {
             <ArrowIcon className="links__icon" />
           </a>
         </div>
+        <div className="header__background">
+          <div className="header__background-item"></div>
+          <div className="header__background-item"></div>
+          <div className="header__background-item"></div>
+          <div className="header__background-item"></div>
+          <div className="header__background-item"></div>
+          <div className="header__background-item"></div>
+          <svg
+            className="header__background-item"
+            width="14"
+            height="12"
+            viewBox="0 0 14 12"
+            fill="none"
+          >
+            <path
+              d="M1.80385 11L7 2L12.1962 11H1.80385Z"
+              stroke="#FF2E00"
+              strokeOpacity="0.8"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
       </Element>
     </header>
   );
 };
-
-/*
-
-        <a
-          href="https://t.me/UltraNata"
-          className="header__link"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span className="header__text-span">Hire me</span>
-          <img src={ArrowIcon} alt="arrowIcon" class="header__link-icon" />
-        </a>
-        
-        */
