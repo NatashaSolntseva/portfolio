@@ -9,6 +9,7 @@ import FacebookIcon from "./icons/facebook.svg";
 import InstagramIcon from "./icons/instagram.svg";
 import TwitterIcon from "./icons/twitter.svg";
 import LinkedinIcon from "./icons/linkedin.svg";
+import TelegramIcon from "./icons/telegram.svg";
 
 import { ReactComponent as BoxIcon } from "./icons/boxes.svg";
 import { ReactComponent as DownloadIcon } from "./icons/download.svg";
@@ -40,6 +41,26 @@ export const Information = () => {
         <h4 className="page__text information__title">Natasha Solntseva</h4>
         <p className="page__text information__text">Font-end Developer</p>
         <div className="information__social-icons">
+          <div className="information__social-icon">
+            <a
+              href="https://www.linkedin.com/in/nataliashmatenko/"
+              className="information__social-icon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={LinkedinIcon} alt="Linkedin-icon"></img>
+            </a>
+          </div>
+          <div className="information__social-icon">
+            <a
+              href="https://t.me/UltraNata"
+              className="information__social-icon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={TelegramIcon} alt="Telegram-icon"></img>
+            </a>
+          </div>
           <a
             href="https://www.facebook.com/ultranata/"
             className="information__social-icon"
@@ -48,9 +69,6 @@ export const Information = () => {
           >
             <img src={FacebookIcon} alt="Facebook-icon"></img>
           </a>
-          <div className="information__social-icon">
-            <img src={InstagramIcon} alt="Instagram-icon"></img>
-          </div>
           <div className="information__social-icon">
             <a
               href="https://twitter.com/_mrrr"
@@ -63,19 +81,13 @@ export const Information = () => {
           </div>
           <div className="information__social-icon">
             <a
-              href="https://www.linkedin.com/in/nataliashmatenko/"
+              href="https://www.instagram.com/natasha_solntseva/"
               className="information__social-icon"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={LinkedinIcon} alt="Linkedin-icon"></img>
+              <img src={InstagramIcon} alt="Instagram-icon"></img>
             </a>
-          </div>
-          <div className="information__social-icon">
-            <img src={FacebookIcon} alt="Instagram"></img>
-          </div>
-          <div className="information__social-icon">
-            <img src={FacebookIcon} alt="Instagram"></img>
           </div>
         </div>
         <div className="information__main-info-container">

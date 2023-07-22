@@ -38,6 +38,18 @@
   border-bottom: 1.5px solid var(--color-light-gray);
 }
 
+.information__social-icon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-yellow);
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease;
+}
+
 .information__main-info-container {
   width: 100%;
 }
@@ -69,18 +81,6 @@
 }
 .information__text-span {
   color: #7eb942;
-}
-
-.information__social-icon {
-  width: 24px;
-  height: 24px;
-  background-color: var(--color-yellow);
-  border-radius: 100%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.7s;
 }
 
 .information__img-container {

@@ -119,6 +119,8 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.8s ease;
+  position: relative;
+  z-index: 100;
 }
 
 .links__container {
