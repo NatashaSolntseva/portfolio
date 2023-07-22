@@ -1,0 +1,25 @@
+@import "../../styles/variable.css";
+
+.skills__caption {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.skills__bar {
+  width: 220px;
+  height: 4px;
+  border: 0.5px solid var(--color-yellow);
+  border-radius: 4px;
+  padding: 1px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills__bar-inside {
+  width: 90%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--color-yellow);
+}

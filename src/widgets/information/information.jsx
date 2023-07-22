@@ -13,6 +13,7 @@ import TelegramIcon from "./icons/telegram.svg";
 
 import { ReactComponent as BoxIcon } from "./icons/boxes.svg";
 import { ReactComponent as DownloadIcon } from "./icons/download.svg";
+import { LANGUAGES, PROGRAMMING } from "../../constants/skills";
 
 export const Information = () => {
   const downloadFile = () => {
@@ -110,8 +111,8 @@ export const Information = () => {
             </li>
           </ul>
         </div>
-        <SkillsContainer header="Languages" />
-        <SkillsContainer header="Skills" />
+        <SkillsContainer header="Languages" data={LANGUAGES} />
+        <SkillsContainer header="Skills" data={PROGRAMMING} />
         <div className="skills">
           <h4>Extra Skills</h4>
           <ul className="skills__list">
