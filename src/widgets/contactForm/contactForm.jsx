@@ -10,13 +10,15 @@ import { Form } from "../../features/form/form";
 import LocationIcon from "./icons/location.svg";
 import MailIcon from "./icons/mail.svg";
 import MobileIcon from "./icons/mobile.svg";
+import { HookForm } from "../../features/hookForm/hookForm";
 
 export const ContactForm = () => {
   return (
     <Element name="contacts" className="contactForm">
       <div className="contactForm__container">
         <Header header="Leave me your info" />
-        <Form />
+
+        <HookForm />
       </div>
       <div className="contactForm__container">
         <Header header="Contact information" />

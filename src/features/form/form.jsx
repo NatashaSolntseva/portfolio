@@ -38,7 +38,12 @@ export const Form = () => {
     for (const [key, value] of Object.entries(formState)) {
       console.log(key, value.value);
       if (!isValidValue({ name: key, value: value.value })) {
+        updatedFormErrorState[key] = { error: true };
+        console.log("formErrorState", formErrorState);
         error++;
+      } else {
+        updatedFormErrorState[key] = { error: false };
+        console.log("formErrorState", formErrorState);
       }
     }
     console.log(error > 0 ? "ERROR" : "SUCCESS");
@@ -52,7 +57,9 @@ export const Form = () => {
       <input
         type="text"
         name="name"
-        className="form__input"
+        className={` form__input ${
+          formErrorState.name.error ? "form__errorInput" : ""
+        }`}
         value={formState.name.value}
         required
         onChange={handleChange}
@@ -63,7 +70,9 @@ export const Form = () => {
         name="email"
         value={formState.email.value}
         required
-        className="form__input"
+        className={` form__input ${
+          formErrorState.email.error ? "form__errorInput" : ""
+        }`}
         onChange={handleChange}
       ></input>
       <label className="form__label">Subject</label>
