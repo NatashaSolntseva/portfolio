@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 import "./hookForm.css";
 
@@ -8,7 +9,6 @@ export const HookForm = () => {
   const {
     register,
     handleSubmit,
-    formState,
     reset,
     formState: { errors },
     formState: { isSubmitSuccessful },
@@ -20,9 +20,18 @@ export const HookForm = () => {
 
   useEffect(() => {
     if (isSubmitSuccessful) {
+      Swal.fire({
+        title: "Hi!",
+        text: "Your message has been successfully sent",
+        icon: "success",
+        buttonsStyling: false,
+        customClass: {
+          confirmButton: "form__btn",
+        },
+      });
       reset({ name: "", email: "", subject: "", message: "" });
     }
-  });
+  }, [isSubmitSuccessful, reset]);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="form">

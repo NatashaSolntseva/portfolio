@@ -10,10 +10,10 @@ import ImgNine from "./images/portfolio-image-9.png";
 
 export const CATEGORIES = [
   "All",
-  "UI Design",
-  "Web Templates",
-  "Logo",
-  "Branding",
+  "JavaScript",
+  "React JS",
+  "Animation",
+  "Landing",
 ];
 
 export const PORTFOLIO__DATA = [
@@ -30,7 +30,7 @@ export const PORTFOLIO__DATA = [
   {
     img: ImgThree,
     link: "/",
-    category: CATEGORIES[1],
+    category: CATEGORIES[4],
   },
   {
     img: ImgFour,
@@ -60,6 +60,6 @@ export const PORTFOLIO__DATA = [
   {
     img: ImgNine,
     link: "/",
-    category: CATEGORIES[3],
+    category: CATEGORIES[4],
   },
 ];
