@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
 import "./hookForm.css";
@@ -7,13 +8,21 @@ export const HookForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
     formState,
+    reset,
+    formState: { errors },
+    formState: { isSubmitSuccessful },
   } = useForm();
 
   const onSubmit = (data) => {
-    alert(JSON.stringify(data));
+    console.log(JSON.stringify(data));
   };
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset({ name: "", email: "", subject: "", message: "" });
+    }
+  });
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="form">
@@ -28,6 +37,10 @@ export const HookForm = () => {
                 value: 20,
                 message: "Name must be no more than 20 characters.",
               },
+              minLength: {
+                value: 2,
+                message: "Name must be at least 2 characters.",
+              },
               pattern: { value: /^[a-zA-Z]{2,}$/ },
             })}
             className="form__input"
@@ -35,7 +48,7 @@ export const HookForm = () => {
         </label>
         <div className="form__errorWrapper">
           {errors?.name && (
-            <p className="form__errorText">{errors?.name.message}</p>
+            <p className="form__errorText">{errors?.name?.message}</p>
           )}
         </div>
         <label className="form__label">
@@ -47,7 +60,7 @@ export const HookForm = () => {
               pattern: {
                 value: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
                 message:
-                  "Please enter your Email in the format username@example.com.",
+                  "Please enter your e-mail in the format username@example.com.",
               },
             })}
             className="form__input"
@@ -55,7 +68,7 @@ export const HookForm = () => {
         </label>
         <div className="form__errorWrapper">
           {errors?.email && (
-            <p className="form__errorText">{errors?.email.message}</p>
+            <p className="form__errorText">{errors?.email?.message}</p>
           )}
         </div>
         <label className="form__label">
@@ -70,15 +83,17 @@ export const HookForm = () => {
         <div className="form__errorWrapper"></div>
         <label className="form__label">
           Your Message
-          <textarea name="message" className="form__textarea"></textarea>
+          <textarea
+            name="message"
+            className="form__textarea"
+            {...register("message")}
+          ></textarea>
         </label>
         <button
           type="submit"
-          disabled={!formState.isDirty || !formState.isValid}
+          disabled={errors.email || errors.name}
           className={` form__btn ${
-            formState.isDirty || formState.isValid
-              ? ""
-              : "form__btn_status_disabled"
+            errors.email || errors.name ? "form__btn_status_disabled" : " "
           }`}
         >
           send message
